@@ -1,65 +1,69 @@
 /** @jsx jsx */
-import { jsx, Container, Box } from 'theme-ui';
-import SectionHeader from 'components/section-header';
-import Accordion from 'components/accordion/accordion';
+import { jsx, Container, Box } from "theme-ui";
+import SectionHeader from "components/section-header";
+import Accordion from "components/accordion/accordion";
+
 const faqs = [
   {
-    title: 'How to contact with riders emergency ?',
+    title: "Formee có tính phí để sử dụng không?",
     contents: (
       <div>
-        Get your website ads tests delivered at let collect sample from the
-        victory of the managements that supplies best design system which
-        guidelines ever with multiple features.
+        Formee cung cấp cả phiên bản miễn phí và phiên bản trả phí. Phiên bản
+        miễn phí bao gồm các tính năng cơ bản, còn phiên bản trả phí sẽ mở rộng
+        các tính năng và hỗ trợ sâu hơn.
       </div>
     ),
   },
   {
-    title: 'App installation failed, how to update system information?',
+    title: "Formee có hỗ trợ đa ngôn ngữ không?",
     contents: (
       <div>
-        Rhino skin maybe thick but it can be quite sensitive to sunburns and
-        insect bites which is why they like wallow so much – when the mud dries
-        it acts as protection from the sunburns and insects.
+        Đúng, Formee hỗ trợ nhiều ngôn ngữ khác nhau bao gồm cả Tiếng Việt. Bạn
+        có thể thay đổi ngôn ngữ trong phần thiết lập của ứng dụng.
       </div>
     ),
   },
   {
-    title: `Website response taking time, how to improve?`,
+    title: "Tôi có thể tùy chỉnh giao diện của Formee theo ý muốn không?",
     contents: (
       <div>
-        Get your blood tests delivered at the home collect a sample from
-        management news. Get your blood tests delivered at the home collect a
-        sample from management news. Get your blood tests delivered at the home
-        collect a sample from management news. Get your blood tests delivered at
-        the home.
+        Chúng tôi hiểu rằng mỗi người dùng có những yêu cầu riêng, vì vậy Formee
+        cho phép bạn tùy chỉnh giao diện để phù hợp với nhu cầu của mình.
       </div>
     ),
   },
   {
-    title: `New update fixed all bug and issues`,
+    title: "Formee có thể đồng bộ với các phần mềm quản lý khác không?",
     contents: (
       <div>
-        If you’re looking to hunt a unicorn, but don’t know where to begin, try
-        Lake Superior State University in Sault Ste. Marie, Michigan. Since
-        1971, the university has issued permits to unicorn questers.
+        Formee có khả năng tương thích cao với nhiều hệ thống khác nhau. Nếu bạn
+        cần tính năng đồng bộ hóa với một phần mềm cụ thể, vui lòng liên hệ với
+        bộ phận hỗ trợ của chúng tôi để nhận thêm thông tin.
+      </div>
+    ),
+  },
+  {
+    title: "Formee có hỗ trợ ứng dụng di động không?",
+    contents: (
+      <div>
+        Chúng tôi cung cấp ứng dụng di động cho cả iOS và Android, giúp bạn quản
+        lý kinh doanh mọi lúc, mọi nơi.
       </div>
     ),
   },
 ];
+
 export default function Faq() {
   return (
-    <section sx={{ variant: 'section.faq' }}>
+    <section sx={{ variant: "section.faq" }}>
       <Container>
-        <SectionHeader
-          title="Frequently asked question"
-          slogan="Get your question answer"
-        />
+        <SectionHeader title="Câu hỏi thường gặp" slogan="" />
         <Box
           sx={{
-            display: 'flex',
-            width: ['100%', null, null, '650px', '745px'],
-            flexDirection: 'column',
-            mx: 'auto',
+            display: "flex",
+            width: ["100%", null, null, "650px", "745px"],
+            flexDirection: "column",
+            mx: "auto",
             my: -4,
           }}
         >

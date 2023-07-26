@@ -1,75 +1,63 @@
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
-import PriceCard from 'components/price-card';
-import SectionHeader from 'components/section-header';
-import { IoIosCheckmarkCircle, IoIosCloseCircle } from 'react-icons/io';
-import PatternBG from 'assets/patternBG.png';
+import { jsx, Container, Flex } from "theme-ui";
+import PriceCard from "components/price-card";
+import SectionHeader from "components/section-header";
+import { IoIosCheckmarkCircle, IoIosCloseCircle } from "react-icons/io";
+import PatternBG from "assets/patternBG.png";
 
 const packages = [
   {
-    name: 'Free Plan',
-    description: 'For Small teams or office',
-    buttonText: 'Signup Now',
+    name: "Gói Miễn Phí",
+    description: "Dành cho các đội nhóm hoặc văn phòng nhỏ",
+    buttonText: "Đăng Ký Ngay",
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: "Quản lý tối đa 100 đơn hàng mỗi tháng",
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text:
-          'Free access for all kind of exercise corrections with downloads.',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
+        text: "Báo cáo doanh thu hàng tháng",
         isAvailable: true,
       },
       {
         icon: <IoIosCloseCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
+        text: "Hỗ trợ 24/7",
         isAvailable: false,
       },
       {
         icon: <IoIosCloseCircle />,
-        text: 'Download and print courses and exercises in PDF',
+        text: "Đồng bộ với các ứng dụng khác",
         isAvailable: false,
       },
     ],
   },
   {
-    header: 'Recommended',
-    name: 'Premium',
-    description: 'For startup enterprise',
-    priceWithUnit: '$29.99/',
-    buttonText: 'Signup Now',
+    header: "Được đề xuất",
+    name: "Gói Premium",
+    description: "Dành cho doanh nghiệp khởi nghiệp",
+    priceWithUnit: "299,000₫/",
+    buttonText: "Đăng Ký Ngay",
     points: [
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Ultimate access to all course, exercises and assessments',
+        text: "Quản lý đơn hàng không giới hạn",
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text:
-          'Free access for all kind of exercise corrections with downloads.',
+        text: "Báo cáo doanh thu chi tiết",
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Total assessment corrections with free download access system',
+        text: "Hỗ trợ 24/7",
         isAvailable: true,
       },
       {
         icon: <IoIosCheckmarkCircle />,
-        text: 'Unlimited download of courses on the mobile app contents',
-        isAvailable: true,
-      },
-      {
-        icon: <IoIosCheckmarkCircle />,
-        text: 'Download and print courses and exercises in PDF',
+        text: "Đồng bộ với các ứng dụng khác",
         isAvailable: true,
       },
     ],
@@ -80,14 +68,14 @@ export default function Package() {
     <section id="pricing" sx={styles.pricing}>
       <Container>
         <SectionHeader
-          title="Let’s see how it works"
-          slogan="Whats the function"
+          title="Giá sử dụng Formee"
+          // slogan="Chức năng là gì"
           isWhite={true}
         />
         <Flex
           sx={{
-            justifyContent: 'center',
-            flexWrap: ['wrap', null, null, 'nowrap'],
+            justifyContent: "center",
+            flexWrap: ["wrap", null, null, "nowrap"],
           }}
         >
           {packages.map((packageData) => (
@@ -101,23 +89,23 @@ export default function Package() {
 
 const styles = {
   pricing: {
-    backgroundColor: 'primary',
+    backgroundColor: "primary",
     backgroundImage: `url(${PatternBG})`,
     backgroundRepeat: `no-repeat`,
-    backgroundPosition: 'center center',
-    backgroundSize: 'cover',
+    backgroundPosition: "center center",
+    backgroundSize: "cover",
     py: [8, null, 9, null, null, 10],
-    position: 'relative',
-    '&::before': {
-      position: 'absolute',
+    position: "relative",
+    "&::before": {
+      position: "absolute",
       content: '""',
       top: 0,
       right: 0,
       background:
-        'linear-gradient(-45deg, rgba(42,72,125, 0.3) 25%, transparent 25%, transparent 50%, rgba(42,72,125, 0.3) 50%, rgba(42,72,125, 0.3) 75%, transparent 75%, transparent)',
-      width: '100%',
-      backgroundSize: '350px 350px',
-      height: '100%',
+        "linear-gradient(-45deg, rgba(42,72,125, 0.3) 25%, transparent 25%, transparent 50%, rgba(42,72,125, 0.3) 50%, rgba(42,72,125, 0.3) 75%, transparent 75%, transparent)",
+      width: "100%",
+      backgroundSize: "350px 350px",
+      height: "100%",
       opacity: 0.3,
       zIndex: 0,
     },

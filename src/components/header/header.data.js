@@ -1,18 +1,18 @@
 export default [
   {
-    path: 'home',
-    label: 'Home',
+    path: "home",
+    label: "Trang chủ",
   },
   {
-    path: 'feature',
-    label: 'Features',
+    path: "feature",
+    label: "Tính năng",
   },
   {
-    path: 'testimonial',
-    label: 'Testimonial',
+    path: "testimonial",
+    label: "Testimonial",
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: "pricing",
+    label: "Giá",
   },
 ];
